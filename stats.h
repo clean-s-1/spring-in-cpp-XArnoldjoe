@@ -37,8 +37,10 @@ namespace Statistics {
         void checkAndAlert(const std::vector<float>& ref)
         {
             bool res = (*max_element(ref.begin(), ref.end())) > threshold;
-            vec[0]->setStatus(res);
-            vec[1]->setStatus(res);
+            for(auto it = vec.begin(); it != vec.end(); ++it)
+            {
+                it->setStatus(res);
+            }
         }
     };
             
