@@ -38,7 +38,7 @@ namespace Statistics {
         {
             bool res = (*max_element(ref.begin(), ref.end())) > threshold;
             vec[0]->setStatus(res);
-            v[1]->setStatus(res);
+            vec[1]->setStatus(res);
         }
     };
             
