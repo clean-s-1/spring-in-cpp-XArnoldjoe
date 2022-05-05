@@ -1,5 +1,6 @@
 #include "stats.h"
 #include<bits/stdc++.h>
+using namespace std;
 
 Statistics::Stats Statistics::ComputeStatistics(const std::vector<float>& ref ) {
     //Implement statistics here
